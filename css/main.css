@@ -1,0 +1,200 @@
+body {
+	margin: 42px 42px 0 42px;
+	transition: margin-top 400ms;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+section {
+	min-height: 100vh;
+	padding-top: 42px;
+	margin-top: -42px;
+
+}
+
+nav {
+	background: pink;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+
+}
+
+nav ul {
+	margin: 0;
+
+}
+
+nav li {
+	display: inline-block;
+	/*border: 1px solid black;*/
+	text-decoration: 3px;
+	padding: 3px;
+	margin: 10px;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+p {
+	
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.box {
+            width: 400px;
+            height: 200px;
+            background: red;
+            transition: all 2s;
+}
+
+.box2 {
+            width: 400px;
+            height: 200px;
+            background: red;
+            transition: all 6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.box2:hover {
+	width: 400px;
+	height: 200px;
+	background: blue;
+}
+
+
+.box3 {
+            width: 400px;
+            height: 200px;
+            background: purple;
+            transition: all 6s;
+            transform: translate(25px, 50px);
+
+}
+
+.box3:hover {
+	width:200px;
+}
+
+.box4{
+	width: 400px;
+    height: 200px;
+    background: red;
+	transform: rotate(30deg);
+	transition: 1s all;
+}
+
+
+
+
+@media (min-width: 768px) {
+        .box {
+                background: yellow;
+            }
+}
+
+@media (min-width: 992px) {
+        .box {
+                background: green;
+        }
+}
+
+@media (min-width: 1200px) {
+            .box {
+                background: blue;
+            }
+}
+
+#menu-button {
+	position: fixed; 
+	top: 0;
+	right: 0;
+	display: none;
+	border: none;
+	background: transparent;
+	font-style: 28px;
+	cursor: pointer;
+	z-index: 2;
+
+}
+
+#about .row div {
+	border: 1px solid black;
+    
+	height: 200px;
+}
+
+/*mobile styles here*/
+@media  (max-width: 768px) {
+	#menu-button {
+		display: block;
+	}
+
+nav {
+	display: none;
+}
+
+nav li {
+	display: block;
+	
+}
+
+.move-down {
+	margin-top: 138px;
+}
+
+.move-down section {
+	padding-top: 138px;
+	margin-top: -138px;
+}
+}
+
+.img-responsive{
+	width: 100%
+}
+
+#resume .row div {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*.col-xs-1 {
+	width: 8.3%;
+}
+
+.col-xs-2 {
+	width: 16.66%;
+}
+
+.col-xs-12 {
+	width: 8.3%;
+}
+
+@media (min-width: 768px) {
+
+.col-sm-12 {
+	width: 100%;
+}
+
+.col-sm-9 {
+
+}
+	
+}
+
+@media (min-width: 992px) {
+
+.col-sm-2 {
+
+}	
+	
+}
+*/
